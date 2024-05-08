@@ -1,0 +1,2 @@
+# seo_tools
+SEO AI TOOLS FOR MAGENTO
