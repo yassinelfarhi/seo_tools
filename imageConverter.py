@@ -1,5 +1,6 @@
 import base64
 import json
+import os
 from io import BytesIO
 from uuid import uuid4
 
@@ -27,7 +28,7 @@ class ImageConverter(MagentoMetas):
             json.dump(self.skus, json_file)
 
     def convert(self):
-        for i in range(2):
+        for i in range(1310):
             page = i + 1
             self.token = self.get_token()
             product_list = self.get_products_chunk(page, self.page_size)
@@ -71,9 +72,10 @@ class ImageConverter(MagentoMetas):
                     }
 
                     media_post_url = f'https://eexera.com/rest/default/V1/products/{product["sku"]}/media/{item["id"]}'
-
                     response = requests.put(media_post_url, json=data, headers=header)
-                print(f'{len(items)} images converted for {product["sku"]} | total : {index} | page : {page}')
+                    os.remove(image_save_path)
+
+                print(f'{len(items)} images converted for {product["sku"]} | total : {index} | page : {page}\n')
                 index = index + 1
 
 
