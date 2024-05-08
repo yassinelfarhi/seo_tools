@@ -5,7 +5,7 @@ import requests
 import openai
 from openai import OpenAI
 
-openai.api_key = "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"
+# openai.api_key = "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"
 
 
 class MagentoMetas:
