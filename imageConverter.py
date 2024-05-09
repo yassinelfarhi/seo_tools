@@ -1,5 +1,6 @@
 import base64
 import json
+import logging
 import os
 from io import BytesIO
 from uuid import uuid4
@@ -9,11 +10,14 @@ from PIL import Image
 
 from MagentoMetas import MagentoMetas
 
+logger = logging.getLogger(__name__)
+
 
 class ImageConverter(MagentoMetas):
 
     def __init__(self, site_id, language) -> None:
         super().__init__(site_id, language)
+        logging.basicConfig(filename='seo_app.log', level=logging.INFO)
         self.skus = []
 
     def get_products_skus(self):
@@ -75,7 +79,7 @@ class ImageConverter(MagentoMetas):
                     response = requests.put(media_post_url, json=data, headers=header)
                     os.remove(image_save_path)
 
-                print(f'{len(items)} images converted for {product["sku"]} | total : {index} | page : {page}\n')
+                logger.info(f'{len(items)} images converted for {product["sku"]} | total : {index} | page : {page}')
                 index = index + 1
 
 

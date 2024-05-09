@@ -3,9 +3,11 @@ from datetime import datetime
 
 import requests
 import openai
+from dotenv import load_dotenv
 from openai import OpenAI
 
 # openai.api_key = "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"
+load_dotenv()
 
 
 class MagentoMetas:
