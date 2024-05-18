@@ -34,7 +34,7 @@ class ImageConverter(MagentoMetas):
             json.dump(self.skus, json_file)
 
     def convert(self):
-        for i in range(1300, 1310):
+        for i in range(24, 1310):
             page = i + 1
             self.token = self.get_token()
             product_list = self.get_products_chunk(page, self.page_size)
