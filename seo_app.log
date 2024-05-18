@@ -1,1 +1,5 @@
-INFO:__main__:5 images converted for 3195510 | total : 1 | page : 1
+INFO:__main__:/8/7/8720845824693_m_en_hd_1.jpg optimized | original size : 80641 | modified size : 58017 |  gained size : 28.055207648714674 % | page : 1301 | product : 364407 |ratio: 0.7194479235128532
+INFO:__main__:/8/7/8720845824693_g_en_hd_1.jpg optimized | original size : 57698 | modified size : 38994 |  gained size : 32.41706818260598 % | page : 1301 | product : 364407 |ratio: 0.6758293181739402
+INFO:__main__:/8/7/8720845824693_g_en_hd_2.jpg optimized | original size : 47433 | modified size : 33389 |  gained size : 29.608078763729896 % | page : 1301 | product : 364407 |ratio: 0.703919212362701
+INFO:__main__:/8/7/8720845824693_g_en_hd_3.jpg optimized | original size : 45384 | modified size : 31670 |  gained size : 30.217697867089722 % | page : 1301 | product : 364407 |ratio: 0.6978230213291028
+INFO:__main__:/8/7/8720845824693_g_en_hd_4.jpg optimized | original size : 60823 | modified size : 41239 |  gained size : 32.19834602041991 % | page : 1301 | product : 364407 |ratio: 0.6780165397958009
